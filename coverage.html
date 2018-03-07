@@ -45,7 +45,7 @@
                                     </a>
                                 </li>
                                 <li class="link">
-                                  <a href="./index.html"  class="active" ><span class="fa fa-file-text-o"></span>README</a>
+                                  <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                 </li>
                                 <li class="link">
                                     <a href="./license.html"
@@ -154,7 +154,7 @@
             
             
                     <li class="chapter">
-                        <a data-type="chapter-link" href="./coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                        <a data-type="chapter-link" href="./coverage.html"  class="active" ><span class="fa fa-tasks"></span>Documentation coverage</a>
                     </li>
             
                     <li class="divider"></li>
@@ -199,7 +199,7 @@
                                            </a>
                                        </li>
                                        <li class="link">
-                                         <a href="./index.html"  class="active" ><span class="fa fa-file-text-o"></span>README</a>
+                                         <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                        </li>
                                        <li class="link">
                                            <a href="./license.html"
@@ -308,7 +308,7 @@
                    
                    
                            <li class="chapter">
-                               <a data-type="chapter-link" href="./coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                               <a data-type="chapter-link" href="./coverage.html"  class="active" ><span class="fa fa-tasks"></span>Documentation coverage</a>
                            </li>
                    
                            <li class="divider"></li>
@@ -322,208 +322,134 @@
                    
                    </nav>
                </div>
-               <div class="content getting-started">
+               <div class="content coverage">
                    <div class="content-data">
 
-<h1 id="-angular-library-seed-the-starter-for-angular-libraries"><code>angular-library-seed</code> - the starter for Angular libraries</h1>
-<p><a href="https://travis-ci.org/trekhleb/angular-library-seed"><img src="https://travis-ci.org/trekhleb/angular-library-seed.svg?branch=master" alt="Build Status" class="img-responsive"></a>
-<a href="https://codecov.io/gh/trekhleb/angular-library-seed"><img src="https://codecov.io/gh/trekhleb/angular-library-seed/branch/master/graph/badge.svg" alt="codecov" class="img-responsive"></a>
-<a href="https://badge.fury.io/js/angular-library-seed"><img src="https://badge.fury.io/js/angular-library-seed.svg" alt="npm version" class="img-responsive"></a></p>
-<blockquote>
-<p>Seed project for <a href="https://angular.io/">Angular</a> libraries that are <a href="https://angular.io/docs/ts/latest/cookbook/aot-compiler.html">AOT</a>/<a href="https://angular.io/docs/ts/latest/cookbook/aot-compiler.html">JIT</a> compatible and that use external <a href="http://sass-lang.com/">SCSS</a>-styles and HTML-templates.</p>
-</blockquote>
-<p>This project contains TickTock library example. The library itself is small and the only thing it does is <a href="http://embed.plnkr.co/VbO1hldrCfF6ITG6VvGG/">displaying current time</a> (Plunker example). But what <strong>most important</strong> is that the project contains <strong>reusable environment</strong> for the libraries that allows to build, test, lint, document, explore and publish them.</p>
-<blockquote>
-<p><a href="https://medium.com/@trekhleb/how-to-create-aot-jit-compatible-angular-4-library-with-external-scss-html-templates-9da6e68dac6e">Read more</a> about architectural <strong>challenges</strong> and <strong>solutions</strong> used in this repository.</p>
-</blockquote>
-<h1 id="you-might-find-this-project-helpful-if">You might find this project helpful if</h1>
-<ul>
-<li>You want to create library for <strong>Angular 4</strong>.</li>
-<li>You want your library to be ready for further <strong>AOT</strong> or <strong>JIT</strong> compilation.</li>
-<li>You want your library to be ready for further usage <strong>directly in browsers</strong> (let&#39;s say <a href="https://github.com/umdjs/umd">UMD</a> bundle loaded by <a href="https://github.com/systemjs/systemjs">SystemJS</a>).</li>
-<li>You want to write component styles in <strong>external SCSS files</strong>.</li>
-<li>You want to write component templates in <strong>external HTML files</strong>.</li>
-<li>You want to have <strong>watch-mode</strong> for library builds (including AOT build).</li>
-</ul>
-<h1 id="main-features">Main Features</h1>
-<ul>
-<li><strong>AOT/JIT</strong> compatible library build via <a href="https://www.npmjs.com/package/@angular/compiler-cli">Angular Compiler</a> (ngc).</li>
-<li><strong>UMD</strong> build via <a href="https://webpack.js.org/">Webpack</a> that allows you to use your library for browser builds. You may play with it on <a href="http://embed.plnkr.co/VbO1hldrCfF6ITG6VvGG/">Plunker</a>.</li>
-<li><strong>Testing</strong> with <a href="https://karma-runner.github.io/1.0/index.html">Karma</a> and <a href="https://jasmine.github.io/">Jasmine</a>.</li>
-<li><strong>Test coverage</strong> report via <a href="https://github.com/gotwarlost/istanbul">Istanbul</a>.</li>
-<li><strong>Watch modes</strong> for building and testing procedures that makes developing process easier.</li>
-<li><strong>Linting</strong> with <a href="https://palantir.github.io/tslint/">TSLint</a> and <a href="https://github.com/mgechev/codelyzer">Codelyzer</a> for static code analysis.</li>
-<li><strong>Exploring your build</strong> via <a href="https://www.npmjs.com/package/source-map-explorer">Sourcemap Explorer</a> that shows you a treemap visualization to help you debug where all the code is coming from. </li>
-<li><strong>Documentation generation</strong> via <a href="https://github.com/compodoc/compodoc">Compodoc</a>. Take a look at <a href="https://trekhleb.github.io/angular-library-seed/">documentation example</a>.</li>
-<li><strong>Documentation hosting</strong>  via <a href="https://pages.github.com/">GitHub Pages</a>.</li>
-<li><strong>AOT/JIT/UMD demos</strong> via <a href="https://webpack.js.org/">Webpack</a> and <a href="https://github.com/systemjs/systemjs">SystemJS</a> that allows you to test library builds.</li>
-<li><strong>Continuous integration</strong> with <a href="https://travis-ci.org/">Travis CI</a>.</li>
-<li><strong>Code coverage</strong> badge via <a href="https://codecov.io">Codecov</a> as a reminder to cover code with tests.</li>
-</ul>
-<h1 id="quick-start">Quick Start</h1>
-<pre class="line-numbers"><code class="language-bash"># Clone the repository
-git clone https://github.com/trekhleb/angular-library-seed.git
 
-# Go to repository folder
-cd angular-library-seed
 
-# Install all dependencies
-yarn install
 
-# Build the library
-yarn build</code></pre><h1 id="file-structure">File Structure</h1>
-<pre class="line-numbers"><code class="language-none">angular-library-seed
-  ├─ demo                         * Folder for demo applications (MAY BE DELETED if not required) 
-  |  ├─ esm                       * AOT/JIT demo project
-  |  ├─ umd                       * UMD demo project
-  |  └─ ...                       * More details about this folder may be found in demo folder README file.
-  |
-  ├─ src                          * Library sources home folder (THE PLACE FOR YOUR LIBRARY SOURCES)
-  |  ├─ components                * Example of library components with tests
-  |  ├─ services                  * Example of library services with tests
-  |  ├─ index.ts                  * Library entry point that is used by builders
-  |  └─ tick-tock.module.ts       * Example of library module
-  |
-  ├─ .editorconfig                * Common IDE configuration
-  ├─ .gitignore                      * List of files that are ignored while publishing to git repo
-  ├─ .npmignore                   * List of files that are ignored while publishing to npm
-  ├─ .travis.yml                  * Travic CI configuration
-  ├─ LICENSE                      * License details
-  ├─ README.md                    * README for you library
-  ├─ gulpfile.js                  * Gulp helper scripts
-  ├─ karma-test-entry.ts          * Entry script for Karma tests
-  ├─ karma.conf.ts                * Karma configuration for our unit tests
-  ├─ package.json                 * NPM dependencies, scripts and package configuration
-  ├─ tsconfig-aot.json            * TypeScript configuration for AOT build
-  ├─ tsconfig.json                * TypeScript configuration for UMD and Test builds
-  ├─ tslint.json                  * TypeScript linting configuration
-  ├─ webpack-test.config.ts       * Webpack configuration for building test version of the library
-  ├─ webpack-umd.config.ts        * Webpack configuration for building UMD bundle
-  └─ yarn.lock                    * Yarn lock file that locks dependency versions</code></pre><h1 id="getting-started">Getting Started</h1>
-<h2 id="dependencies">Dependencies</h2>
-<h4 id="node-npm">Node/NPM</h4>
-<p>Install latest Node and NPM following the <a href="https://nodejs.org/en/download/">instructions</a>. Make sure you have Node version ≥ 7.0 and NPM ≥ 4.</p>
-<ul>
-<li><code>brew install node</code> for Mac.</li>
-</ul>
-<h4 id="yarn">Yarn</h4>
-<p><a href="https://yarnpkg.com/en/">Yarn package manager</a> is optional but highly recommended. If you prefer to work with <code>npm</code> directly you may ignore this step.</p>
-<p>Yarn installs library dependencies faster and also locks theirs versions. It has <a href="https://yarnpkg.com/en/">more advantages</a> but these two are already pretty attractive. </p>
-<p>Install Yarn by following the <a href="https://yarnpkg.com/en/docs/install">instructions</a>.</p>
-<ul>
-<li><code>brew install yarn</code> for Mac.</li>
-</ul>
-<h2 id="installing">Installing</h2>
-<ul>
-<li><code>fork</code> this repository.</li>
-<li><code>clone</code> your fork to your local environment.</li>
-<li><code>yarn install</code> to install required dependencies (or <code>npm i</code>).</li>
-</ul>
-<h2 id="replace-ticktock-library-with-your-own-library">Replace <code>TickTock</code> library with your own library</h2>
-<p>This step may be optional at first since you might just want to play with existing library example.</p>
-<p>Once you&#39;re ready to develop your own library you should do the following.</p>
-<ul>
-<li>Check and re-configure <code>package.json</code> fields like <code>name</code>, <code>version</code>, <code>keywords</code>, <code>description</code> etc. You may read about specifics of npm&#39;s <a href="https://docs.npmjs.com/files/package.json">package.json handling</a> to do that.</li>
-<li>Replace the content of <code>src</code> folder with your library sources. Your library must have <code>index.ts</code> file as an entry point for further building.</li>
-<li>Update <code>demo</code> sources to make them consume your library in case if you want to keep the demo folder.</li>
-</ul>
-<h2 id="build-the-library">Build the library</h2>
-<ul>
-<li><code>yarn build</code> for building the library once (both ESM and AOT versions).</li>
-<li><code>yarn build:watch</code> for building the library (both ESM and AOT versions) and watch for file changes.</li>
-</ul>
-<p>You may also build UMD bundle and ESM files separately:</p>
-<ul>
-<li><code>yarn build:esm</code> - for building AOT/JIT compatible versions of files.</li>
-<li><code>yarn build:esm:watch</code> - the same as previous command but in watch-mode.</li>
-<li><code>yarn build:umd</code> - for building UMD bundle only.</li>
-<li><code>yarn build:umd:watch</code> - the same as previous command but in watch-mode.</li>
-</ul>
-<h2 id="other-commands">Other commands</h2>
-<h4 id="lint-the-code">Lint the code</h4>
-<ul>
-<li><code>yarn lint</code> for performing static code analysis.</li>
-</ul>
-<h4 id="test-the-library">Test the library</h4>
-<ul>
-<li><code>yarn test</code> for running all your <code>*.spec.ts</code> tests once. Generated code coverage report may be found in <code>coverage</code> folder.</li>
-<li><code>yarn test:watch</code> for running all you <code>*.spec.ts</code> and watch for file changes.</li>
-</ul>
-<h4 id="generate-documentation">Generate documentation</h4>
-<ul>
-<li><code>yarn docs</code> for generating documentation locally.</li>
-<li><code>yarn gh-pages</code> for generating documentation and uploading it to GitHub Pages. <a href="https://trekhleb.github.io/angular-library-seed/">Documentation example</a>.</li>
-</ul>
-<h4 id="explore-the-bundle">Explore the bundle</h4>
-<ul>
-<li><code>yarn explorer</code> to find out where all your code in bundle is coming from.</li>
-</ul>
-<h4 id="bump-library-version">Bump library version</h4>
-<ul>
-<li><code>npm version patch</code> to increase library version. <a href="https://docs.npmjs.com/cli/version">More on bumping</a>.</li>
-</ul>
-<p><code>preversion</code> script in this case will automatically run project testing and linting in prior in order to check that the library is ready for publishing.</p>
-<h4 id="publish-library-to-npm">Publish library to NPM</h4>
-<ul>
-<li><code>npm publish</code> to publish your library sources on <a href="https://www.npmjs.com/">npmjs.com</a>. Once the library is published it will be <a href="https://www.npmjs.com/package/angular-library-seed">available for usage</a> in npm packages.</li>
-</ul>
-<p><code>prepublishOnly</code> script in this case will automatically run project testing and linting in prior in order to check that the library is ready for publishing.</p>
-<h4 id="cleaning">Cleaning</h4>
-<ul>
-<li><code>yarn clean:tmp</code> command will clean up all temporary files like <code>docs</code>, <code>dist</code>, <code>coverage</code> etc.</li>
-<li><code>yarn clean:all</code> command will clean up all temporary files along with <code>node_modules</code> folder. </li>
-</ul>
-<h1 id="library-development-workflow">Library development workflow</h1>
-<p>In order to debug your library in browser you need to have Angular project that will consume your library, build the application and display it. For your convenience all of that should happen automatically in background so once you change library source code you should instantly see the changes in browser.</p>
-<p>There are several ways to go here:</p>
-<ul>
-<li>Use your <strong>real library-consumer project</strong> and link your library to it via <code>yarn link</code> command (see below).</li>
-<li>Use <a href="https://github.com/trekhleb/angular-library-seed/tree/master/demo">demo applications</a> that are provided for your convenience as a part of this repository.</li>
-<li>Use <a href="https://cli.angular.io/">Angular-CLI</a> to generate library-consumer project for you and then use <code>yarn link</code> to link your library to it.</li>
-</ul>
-<h3 id="using-demo-applications">Using demo applications</h3>
-<p>You may take advantage of watch-modes for both library build and <a href="https://github.com/trekhleb/angular-library-seed/tree/master/demo">demo-projects</a> builds in order to see changes to your library&#39;s source code immediately in your browser.</p>
-<p>To do so you need to:</p>
-<ol>
-<li>Open two console instances.</li>
-<li>Launch library build in watch mode in first console instance by running <code>yarn build:watch</code> (assuming that you&#39;re in <code>angular-library-seed</code> root folder).</li>
-<li>Launch demo project build (JIT version) in watch-mode by running <code>yarn start</code> in second console instance (assuming that you&#39;re in <code>angular-library-seed/demo</code> folder).</li>
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Documentation coverage</li>
 </ol>
-<p>As a result once you change library source code it will be automatically re-compiled and in turn your JIT demo-project will be automatically re-built and you will be able to see that changes in your browser instantly.</p>
-<p>For more details about demo projects, their folder structure and npm commands please take a look at <a href="https://github.com/trekhleb/angular-library-seed/tree/master/demo">demo projects README</a>.</p>
-<h3 id="using-yarn-link-">Using <code>yarn link</code></h3>
-<p>In you library root folder:</p>
-<pre class="line-numbers"><code class="language-bash"># Create symbolic link
-yarn link
 
-# Build library in watch mode
-yarn build:watch</code></pre><p>In you project folder that should consume the library:</p>
-<pre class="line-numbers"><code class="language-bash"># Link you library to the project
-yarn link &quot;angular-library-seed&quot;
+<img src="./images/coverage-badge.svg">
 
-# Build your project. In case of Angular-CLI use the following command.
-ng serve --aot</code></pre><p>Then you need to import your library into your project&#39;s source code.</p>
-<p>Now, once you update your library source code it will automatically be re-compiled and your project will be re-built so you may see library changes instantly.</p>
-<p><a href="https://yarnpkg.com/en/docs/cli/link">More information</a> about <code>yarn link</code> command.</p>
-<blockquote>
-<p>At the moment of publishing this project there is a <a href="https://github.com/angular/angular-cli/issues/3854">bug</a> exists when using <code>yarn link</code> in combination with Angular CLI. The issue is caused by having <code>node_modules</code> folder inside linked library. There is a <a href="https://github.com/angular/angular-cli/issues/3854#issuecomment-274344771">workaround</a> has been provided that suggests to add a <code>paths</code> property with all Angular dependencies to the <code>tsconfig.json</code> file of the Angular CLI project like it is shown below:</p>
-<pre class="line-numbers"><code class="language-none">{
-  &quot;compilerOptions&quot;: {
-    &quot;paths&quot;: { &quot;&#64;angular/*&quot;: [&quot;../node_modules/&#64;angular/*&quot;] }
-  }
-}</code></pre></blockquote>
+<table class="table table-bordered coverage" id="coverage-table">
+    <thead class="coverage-header">
+        <tr>
+            <th>File</th>
+            <th>Type</th>
+            <th>Identifier</th>
+            <th style="text-align:right" class="statements" data-sort-default>Statements</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="low">
+            <td>
+                <a href="./components/AppComponent.html">demo/esm/src/app/app.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                AppComponent
+            </td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/AppComponent.html">demo/umd/app/app.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                AppComponent
+            </td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="medium">
+            <td>
+                <a href="./components/TickTockComponent.html">src/components/tick-tock/tick-tock.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                TickTockComponent
+            </td>
+            <td align="right" data-sort="33">
+                <span class="coverage-percent">33 %</span>
+                <span class="coverage-count">(1/3)</span>
+            </td>
+        </tr>
+        <tr class="good">
+            <td>
+                <a href="./injectables/TickTockService.html">src/services/tick-tock/tick-tock.service.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                TickTockService
+            </td>
+            <td align="right" data-sort="100">
+                <span class="coverage-percent">100 %</span>
+                <span class="coverage-count">(2/2)</span>
+            </td>
+        </tr>
+        <tr class="medium">
+            <td>
+                <a href="./components/TickTockComponent.html">tmp/src-inlined/components/tick-tock/tick-tock.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                TickTockComponent
+            </td>
+            <td align="right" data-sort="33">
+                <span class="coverage-percent">33 %</span>
+                <span class="coverage-count">(1/3)</span>
+            </td>
+        </tr>
+        <tr class="good">
+            <td>
+                <a href="./injectables/TickTockService.html">tmp/src-inlined/services/tick-tock/tick-tock.service.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                TickTockService
+            </td>
+            <td align="right" data-sort="100">
+                <span class="coverage-percent">100 %</span>
+                <span class="coverage-count">(2/2)</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-
-
-
-
-
-
-
-
-
-
-
+<script src="js/libs/tablesort.min.js"></script>
+<script src="js/libs/tablesort.number.min.js"></script>
+<script>
+    new Tablesort(document.getElementById('coverage-table'));
+</script>
 
                    </div><div class="search-results">
     <div class="has-results">
