@@ -1,5 +1,5 @@
 {
-  "name": "@aprola/tick-tock",
+  "name": "@aprola/angular-seed-library",
   "version": "0.0.1",
   "description": "Angular library seed",
   "main": "./dist/index.umd.js",
